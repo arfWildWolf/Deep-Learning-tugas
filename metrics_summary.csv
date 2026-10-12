@@ -1,0 +1,7 @@
+Code,Strategy,Trainable Params,Learning Rate,Epoch Converged,Duration (s),Val Accuracy,Test Macro F1
+B1,Baseline From Scratch,11181642,1e-3,9,94.68,0.2321,0.2327
+B2,Feature Extraction,5130,1e-3,15,122.6,0.9578,0.9706
+B3,Progressive Fine-Tuning,8398858,"l4:1e-4, fc:1e-3",8,69.73,0.9536,0.9833
+B4_NoAug,B3 without Augmentation,8398858,"l4:1e-4, fc:1e-3",8,68.42,0.9536,0.9833
+B4_WithAug,B3 with Augmentation,8398858,"l4:1e-4, fc:1e-3",7,86.62,0.9536,0.9708
+B5,Alternative Architecture (EfficientNet-B0),730042,"b7:1e-4, cls:1e-3",15,133.7,0.9409,0.9663

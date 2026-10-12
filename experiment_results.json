@@ -1,0 +1,62 @@
+[
+    {
+        "Code": "B1",
+        "Strategy": "Baseline From Scratch",
+        "Trainable Params": 11181642,
+        "Learning Rate": "1e-3",
+        "Epoch Converged": 9,
+        "Duration (s)": 94.68,
+        "Val Accuracy": 0.2321,
+        "Test Macro F1": 0.2327
+    },
+    {
+        "Code": "B2",
+        "Strategy": "Feature Extraction",
+        "Trainable Params": 5130,
+        "Learning Rate": "1e-3",
+        "Epoch Converged": 15,
+        "Duration (s)": 122.6,
+        "Val Accuracy": 0.9578,
+        "Test Macro F1": 0.9706
+    },
+    {
+        "Code": "B3",
+        "Strategy": "Progressive Fine-Tuning",
+        "Trainable Params": 8398858,
+        "Learning Rate": "l4:1e-4, fc:1e-3",
+        "Epoch Converged": 8,
+        "Duration (s)": 69.73,
+        "Val Accuracy": 0.9536,
+        "Test Macro F1": 0.9833
+    },
+    {
+        "Code": "B4_NoAug",
+        "Strategy": "B3 without Augmentation",
+        "Trainable Params": 8398858,
+        "Learning Rate": "l4:1e-4, fc:1e-3",
+        "Epoch Converged": 8,
+        "Duration (s)": 68.42,
+        "Val Accuracy": 0.9536,
+        "Test Macro F1": 0.9833
+    },
+    {
+        "Code": "B4_WithAug",
+        "Strategy": "B3 with Augmentation",
+        "Trainable Params": 8398858,
+        "Learning Rate": "l4:1e-4, fc:1e-3",
+        "Epoch Converged": 7,
+        "Duration (s)": 86.62,
+        "Val Accuracy": 0.9536,
+        "Test Macro F1": 0.9708
+    },
+    {
+        "Code": "B5",
+        "Strategy": "Alternative Architecture (EfficientNet-B0)",
+        "Trainable Params": 730042,
+        "Learning Rate": "b7:1e-4, cls:1e-3",
+        "Epoch Converged": 15,
+        "Duration (s)": 133.7,
+        "Val Accuracy": 0.9409,
+        "Test Macro F1": 0.9663
+    }
+]
